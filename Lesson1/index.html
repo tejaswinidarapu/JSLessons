@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Lesson1 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = 10; // global scope variable
+        function add() {
+            var b = a + 10; // b is in function scope
+            c = b+10;
+            window.alert('This is internal script tags in head'+b);
+        }
+        add();
+    </script>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <h1>Lesson1 of javascript</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quibusdam placeat enim quasi fugiat praesentium quod ducimus corporis temporibus voluptate, exercitationem corrupti dolore fugit obcaecati aperiam voluptatem dolor delectus. Earum.
+    </p>
+
+    <!-- Best place to keep the script files -->
+    <script src="./script2.js"></script>
+    <script>
+        window.alert('This is internal script tags in body');
+    </script>
+    <script src="./variables.js"></script>
+</body>
+</html>
